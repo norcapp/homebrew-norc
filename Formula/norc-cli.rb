@@ -4,7 +4,7 @@ class NorcCli < Formula
   homepage "https://norc.app/cli"
   url "https://registry.npmjs.org/norc-cli/-/norc-cli-0.1.0.tgz"
   sha256 "500ebbd2d7173e1db9338a1100cbc6db1d64130cdd4069e0c87c6b7c13ce7ce6"
-  # license: repo has no LICENSE file/field yet — add here once one exists.
+  license "MIT"
 
   depends_on "node"
 
