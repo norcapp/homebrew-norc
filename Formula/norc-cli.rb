@@ -2,8 +2,8 @@
 class NorcCli < Formula
   desc "Headless cron job scheduler for norc"
   homepage "https://norc.app/cli"
-  url "https://registry.npmjs.org/norc-cli/-/norc-cli-0.1.0.tgz"
-  sha256 "500ebbd2d7173e1db9338a1100cbc6db1d64130cdd4069e0c87c6b7c13ce7ce6"
+  url "https://registry.npmjs.org/norc-cli/-/norc-cli-0.1.1.tgz"
+  sha256 "5c08710ca16ac51b6b6ed6087b4c21596f1460618cfb03f8232c34e4c1ddc9b7"
   license "MIT"
 
   depends_on "node"
@@ -20,10 +20,7 @@ class NorcCli < Formula
 
   def caveats
     <<~EOS
-      norc-cli needs NORC_SUPABASE_URL and NORC_SUPABASE_ANON_KEY set before
-      `norc login` / `norc pair` / the background service can reach your
-      account. Run `norc pair` once after setting those to connect this
-      machine.
+      Run `norc pair` to connect this machine to your norc account.
 
       Before running `brew uninstall norc-cli`, run `norc service uninstall`
       first — Homebrew formulas have no uninstall hook, so this won't happen
