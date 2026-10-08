@@ -1,16 +1,15 @@
 # Homebrew cask for the norc-desktop GUI (Tauri app, built from apps/desktop).
 #
-# Releases live in norcapp/norc-desktop (tag v<version>). The dmg is Apple Silicon only.
+# ponytail: `version`/`sha256` are placeholders until the first tagged
+# desktop release publishes a .dmg via GitHub Releases.
 cask "norc-desktop" do
-  version "0.2.1"
-  sha256 "eff7c60761d32e31597355b9258effeaa5735beda83cb2affe05f28bd68a4c41"
+  version "0.0.1"
+  sha256 "REPLACE_WITH_SHA256_AFTER_FIRST_RELEASE"
 
-  url "https://github.com/norcapp/norc-desktop/releases/download/v#{version}/norc_#{version}_aarch64.dmg"
+  url "https://github.com/redcoatasher/norc/releases/download/desktop-v#{version}/norc_#{version}_universal.dmg"
   name "norc"
   desc "GUI for norc's cron job scheduler"
   homepage "https://norc.app"
-
-  depends_on arch: :arm64
 
   app "norc.app"
 
