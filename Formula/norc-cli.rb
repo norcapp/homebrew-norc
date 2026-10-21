@@ -2,8 +2,8 @@
 class NorcCli < Formula
   desc "Headless cron job scheduler for norc"
   homepage "https://norc.app/cli"
-  url "https://registry.npmjs.org/norc-cli/-/norc-cli-0.2.2.tgz"
-  sha256 "1e665f5a19b58e8aae72e54f753acde94f11b85392e7b9a596abcc88aceb7a82"
+  url "https://registry.npmjs.org/norc-cli/-/norc-cli-0.3.0.tgz"
+  sha256 "29f3e01eafb74f7a653d56362d7c34062deca60697cefb047fba4507016ab8a6"
   license "MIT"
 
   depends_on "node"
