@@ -2,8 +2,8 @@
 #
 # Releases live in norcapp/norc-desktop (tag v<version>). The dmg is Apple Silicon only.
 cask "norc-desktop" do
-  version "0.2.2"
-  sha256 "7db0f0bfc63be49213f7c537422ed940c5409de062ec857bf21882f94c4f10fd"
+  version "0.3.0"
+  sha256 "f326cebc2825c3a48e17e1078c37ba235a4ece7e375f63107b5800e894ce8928"
 
   url "https://github.com/norcapp/norc-desktop/releases/download/v#{version}/norc_#{version}_aarch64.dmg"
   name "norc"
