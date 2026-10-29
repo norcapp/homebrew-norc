@@ -13,15 +13,17 @@ class NorcCli < Formula
     bin.install_symlink Dir["#{libexec}/bin/*"]
   end
 
+  def post_install
+    system bin/"norc", "service", "install"
+    system bin/"norc", "__dupe-check"
+  end
+
   def caveats
     <<~EOS
       Run `norc pair` to connect this machine to your norc account.
 
-      The background service is opt-in and is not installed automatically.
-      To run scheduled jobs in the background, run `norc service install`.
-
-      If you enabled the service, run `norc service uninstall` before
-      `brew uninstall norc-cli` — Homebrew formulas have no uninstall hook, so this won't happen
+      Before running `brew uninstall norc-cli`, run `norc service uninstall`
+      first — Homebrew formulas have no uninstall hook, so this won't happen
       automatically and a stale LaunchAgent would otherwise be left behind.
     EOS
   end
